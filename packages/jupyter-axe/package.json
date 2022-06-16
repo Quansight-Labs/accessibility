@@ -1,5 +1,5 @@
 {
-  "name": "@jupyterlab/a11ytests",
+  "name": "@jupyter_accessibility/jupyter-axe",
   "version": "0.0.1",
   "private": true,
   "description": "Run automated accessibility checks against JupyterLab",

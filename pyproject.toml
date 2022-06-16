@@ -23,5 +23,19 @@ addopts = "--nbval --sanitize-with docs/sanitize.cfg -pno:warnings --cov=schemin
 directory = "docs/coverage"
 
 [build-system]
-requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
-build-backend = "setuptools.build_meta"
+requires = ["jupyter_packaging~=0.10,<2", "jupyterlab~=3.1"]
+build-backend = "jupyter_packaging.build_api"
+
+[tool.jupyter-packaging.options]
+skip-if-exists = ["frontish/labextension/static/style.js"]
+ensured-targets = ["frontish/labextension/static/style.js", "frontish/labextension/package.json"]
+
+[tool.jupyter-packaging.builder]
+factory = "jupyter_packaging.npm_builder"
+
+[tool.jupyter-packaging.build-args]
+build_cmd = "build:prod"
+npm = ["jlpm"]
+
+[tool.check-manifest]
+ignore = ["frontish/labextension/**", "yarn.lock", ".*", "package-lock.json"]

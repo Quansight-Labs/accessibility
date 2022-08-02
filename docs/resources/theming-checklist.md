@@ -12,16 +12,12 @@
 - [ ]  Color is not the only means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.[1.4.1]
 - [ ] Text has a contrast ratio of at least 4.5:1 (Except for large text, incidental uses, and logos). [1.4.3](https://www.w3.org/TR/WCAG22/#contrast-minimum)
     - [ ] Contrast ratio is at least 7:1 (Except for large text, incidental uses, and logos). [1.4.6](https://www.w3.org/TR/WCAG22/#contrast-enhanced)
-- [ ] Text is used to convey information, rather than images of text. See guidelines for exceptions. [1.4.5](https://www.w3.org/TR/WCAG22/#images-of-text) and [1.4.9](https://www.w3.org/TR/WCAG22/#images-of-text-no-exception)
 - [ ] User interface components and graphics have a contrast ratio of at least 3:1 against adjacent color(s). [1.4.11](https://www.w3.org/TR/WCAG22/#non-text-contrast)
-- [ ] When a measurement should scale with text size, it is measured in ems. When a measurement should not scale with text size, it is measured in px. [Source](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
-- [ ] Syntax highlighting has a contrast ratio of at least 4.5:1
 - [ ] Red and green are not used adjacent to one another or to convey opposite information unless they are labelled with non-color versions of the information at every instance. 
 
 
 ## Operable
 
-- [ ] Animations tirggered by interaction can be disabled (see guidelines for exceptions). [2.3.3.](https://www.w3.org/TR/WCAG22/#animation-from-interactions)
 - [ ] There is a visible focus indicator. [2.4.7](https://www.w3.org/TR/WCAG22/#focus-visible)
 - [ ] Visible focus indicators have ([2.4.11](https://www.w3.org/TR/WCAG22/#focus-appearance-minimum) and [2.4.12](https://www.w3.org/TR/WCAG22/#focus-appearance-enhanced))
     - [ ] A contrast ratio of at least 3:1 between focused and unfocused states. 
@@ -36,11 +32,10 @@
 
 - [ ] Areas with user input have labels or instructions. [3.3.2](https://www.w3.org/TR/WCAG22/#labels-or-instructions)
 - [ ] Labels and instructions are persistent.
-- [ ] All clickable areas have tool tips.
 
-## Customization
+## Customization (stretch goals)
 
-I'm including this because I'd like to evaluate for it, but it may not be possible in this timeline.
+Customization work is important, but may not be possible in the timeline we want to iterate on these theming extensions. It still may serve as a helpful reference point. 
 
 - [ ] For blocks of text, users have an interface that can ([1.4.8](https://www.w3.org/TR/WCAG22/#visual-presentation))
     - [ ] Select foreground and background colors
@@ -60,3 +55,8 @@ I'm including this because I'd like to evaluate for it, but it may not be possib
 - [ ] Users can select page background color
 - [ ] Users can set syntax highlighting theme
 - [ ] Users can toggle customized styles on and off (do not need to reset all to default one by one)
+
+## For further exploration (stretch goals) 
+
+- [ ] When a measurement should scale with text size, it is measured in ems. When a measurement should not scale with text size, it is measured in px. [Source](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/)
+- [ ] Syntax highlighting has a contrast ratio of at least 4.5:1

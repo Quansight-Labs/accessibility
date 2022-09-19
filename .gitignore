@@ -1,4 +1,4 @@
-# Jupyter Book 
+# Jupyter Book
 _build
 
 # Byte-compiled / optimized / DLL files
@@ -122,12 +122,11 @@ logs/
 # reports
 reports/
 
-# nox
-**.nox/
-
-# playwright stuff
-**/playwright-*/
-**/test-results/
-
 # mac
 .DS_Store
+
+# editor
+.vscode
+
+# nox stuff
+.nox/

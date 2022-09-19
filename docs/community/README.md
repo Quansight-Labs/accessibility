@@ -1,2 +1,0 @@
-# `jupyter` accessibility community information
-
